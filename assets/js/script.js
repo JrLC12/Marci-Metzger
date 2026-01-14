@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'assets/images/logo.png'
     ];
 
-    function updateGallery(index) {
+    function updateGallery(index, skipScroll = false) {
         if (index < 0) index = galleryImages.length - 1;
         if (index >= galleryImages.length) index = 0;
         currentIndex = index;
@@ -149,10 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Scroll thumbnail into view
-        const activeThumbnail = thumbnails[currentIndex];
-        if (activeThumbnail) {
-            activeThumbnail.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        // Scroll thumbnail into view (skip on initial load)
+        if (!skipScroll) {
+            const activeThumbnail = thumbnails[currentIndex];
+            if (activeThumbnail) {
+                activeThumbnail.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
         }
     }
 
@@ -174,6 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowRight') updateGallery(currentIndex + 1);
     });
 
-    // Initialize on page load
-    updateGallery(0);
+    // Initialize on page load (skip scroll to prevent page jump)
+    updateGallery(0, true);
 })();
