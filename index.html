@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marci Metzger - The Ridge Realty Group</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="fonts.googleapis.com|Cinzel+Decorative:400,700,900" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Topbar start-->
+    <div class="topbar bg-light d-none d-lg-block">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-1">
+                <div class="text-dark small d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    123 Main St, Pahrump, NV
+                </div>
+                <div class="text-dark small d-flex align-items-center my-1 my-md-0">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <a href="tel:2069196886" class="text-decoration-none text-dark">206-919-6886</a>
+                </div>
+                <div class="text-white">
+                    <a href="tel:2069196886" class="btn btn-sm btn-primary">Call Me Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar end-->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+        <div class="container position-relative">
+
+            <a class="mx-1 d-lg-none" href="#">
+                <img src="assets/images/logo.png">
+            </a>
+
+            <button class="navbar-toggler position-absolute end-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                <!-- LEFT NAV -->
+                <ul class="navbar-nav align-items-center gap-5 me-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Listings</a></li>
+                </ul>
+
+                <!-- CENTER LOGO -->
+                <a class="navbar-logo d-none d-lg-block mx-4" href="#">
+                    <img src="assets/images/logo.png" alt="site logo" style="height:80%;width:50%;">
+                </a>
+
+                <!-- RIGHT NAV -->
+                <ul class="navbar-nav align-items-center gap-5 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="#">Let's Move</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero section start -->
+    <section class="hero-section container-fluid">
+        <div class="hero-content mb-5">
+            <h1 class="hero-title">MARCI METZGER - THE RIDGE REALTY GROUP</h1>
+            <h2 class="hero-subtitle">PAHRUMP REALTOR</h2>
+            <a href="#" class="btn btn-primary">GET STARTED</a>
+        </div>
+    </section>
+    <!-- Hero section start -->
+
+    <section class="carousel-section position-relative">
+        <div id="propertyCarousel" class="carousel slide position-absolute top-100 start-50 translate-middle"
+            data-bs-ride="carousel" style="width: 80%; z-index: 10;">
+
+            <div class="carousel-inner layered-carousel filter-shadow">
+
+                <div class="carousel-item active" data-title="Top Residential Sales Last 5 Years"
+                    data-text="We helped nearly 90 clients in 2021, and closed 28.5 million in sales! Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.">
+                    <img src="assets/images/home1.webp" class="d-block w-100 carousel-image">
+                </div>
+
+                <div class="carousel-item" data-title="Don't Just List it..."
+                    data-text="Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.">
+                    <img src="assets/images/home2.webp" class="d-block w-100 carousel-image">
+                </div>
+
+                <div class="carousel-item" data-title="Guide to Buyers"
+                    data-text="Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!">
+                    <img src="assets/images/home3.webp" class="d-block w-100 carousel-image">
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="stats-section">
+        <div class="container text-center">
+
+            <h2 class="stats-title">GET IT SOLD</h2>
+
+            <div class="carousel-caption-box">
+                <button id="carouselPrev" class="carousel-nav-btn carousel-nav-prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="bg-dark" style="padding:10px;border-radius:5px;">
+                    <h3 class="stats-subtitle" id="carouselTitle">
+                        TOP RESIDENTIAL SALES LAST 5 YEARS
+                    </h3>
+
+                    <p class="stats-text" id="carouselText">
+                        We Helped Nearly 90 Clients In 2021, And Closed 28.5 Million In Sales!
+                        Our Team Works Hard Everyday To Grow And Learn, So That We May Continue
+                        To Excel In Our Market. Our Clients Deserve Our Best, & We Want To Make
+                        Sure Our Best Is Better Every Year.
+                    </p>
+                </div>
+
+                <button id="carouselNext" class="carousel-nav-btn carousel-nav-next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-indicators position-static mt-4">
+                <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="about-section bg-dark">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/marci.png" alt="Marci Metzger">
+                </div>
+                <div class="about-text d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2>MARCI METZGER</h2>
+                    <h3>REALTOR FOR NEARLY 3 DECADES!</h3>
+                    <div class="phone-number">206-919-6886</div>
+                    <div class="stats-icons d-flex justify-content-center flex-wrap gap-4 mt-4">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                            <span class="years">30+</span>
+                            <span>YEARS EXPERIENCE</span>
+                        </div>
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                            <span class="years">30+</span>
+                            <span>YEARS EXPERIENCE</span>
+                        </div>
+                        <div class="stat-icon">
+                            <i class="fas fa-home"></i>
+                            <span class="years">30+</span>
+                            <span>YEARS EXPERIENCE</span>
+                        </div>
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                            <span class="years">30+</span>
+                            <span>YEARS EXPERIENCE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="search-section ">
+        <div
+            class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center text-center text-white">
+            <h2 class="mb-4">FIND YOUR DREAM HOME</h2>
+            <div class="container">
+                <p class="mb-4">Search all homes for sale in Pahrump, NV. View property details, photos, and
+                    more!</p>
+                <div class="form-container ">
+                    <form class="w-100">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="location">Location</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                                        <select name="location" id="location" class="form-select">
+                                            <option value="">Select Location</option>
+                                            <option value="Pahrump, NV" selected>Pahrump, Nevada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="propertyType">Type</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-home"></i></span>
+                                        <select name="propertyType" id="propertyType" class="form-select">
+                                            <option value="" disabled selected>Select Type</option>
+                                            <option value="house">House</option>
+                                            <option value="condo">Condo</option>
+                                            <option value="townhouse">Townhouse</option>
+                                            <option value="land">Land</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="sortBy">Sort By</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-sort"></i></span>
+                                        <select class="form-select" name="sortBy" id="sortBy">
+                                            <option value="Newest">Newest</option>
+                                            <option value="Oldest">Oldest</option>
+                                            <option value="Least Experience to Most">Least Experience to Most</option>
+                                            <option value="Most Experience to Least">Most Experience to Least</option>
+                                            <option value="Bedrooms (Low to High)">Bedrooms (Low to High)</option>
+                                            <option value="Bedrooms (High to Low)">Bedrooms (High to Low)</option>
+                                            <option value="Bathrooms (Low to High)">Bathrooms (Low to High)</option>
+                                            <option value="Bathrooms (High to Low)">Bathrooms (High to Low)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="bedrooms">Bedrooms</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-bed"></i></span>
+                                        <select name="bedrooms" id="bedrooms" class="form-select">
+                                            <option value="All">Any Number</option>
+                                            <option value="studio">Studio</option>
+                                            <option value="1" selected>1+</option>
+                                            <option value="2">2+</option>
+                                            <option value="3">3+</option>
+                                            <option value="4">4+</option>
+                                            <option value="5">5+</option>
+                                            <option value="6">6+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="baths">Baths</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-bath"></i></span>
+                                        <select name="baths" id="baths" class="form-select">
+                                            <option value="All">Any Number</option>
+                                            <option value="1" selected>1+</option>
+                                            <option value="2">2+</option>
+                                            <option value="3">3+</option>
+                                            <option value="4">4+</option>
+                                            <option value="5">5+</option>
+                                            <option value="6">6+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="minPrice">Min Price</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                        <input type="text" name="minPrice" id="minPrice" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="maxPrice">Max Price</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                        <input type="text" name="maxPrice" id="maxPrice" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <button class="btn btn-primary w-100" type="submit">SEARCH</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="logo-section bg-dark position-relative">
+        <div class="container position-relative">
+            <!-- Mini Logo Container (Floating) -->
+            <div
+                class="mini-container d-flex justify-content-center align-items-center position-absolute top-0 start-50 translate-middle">
+                <div class="logo-carousel d-flex justify-content-center align-items-center flex-wrap gap-4">
+                    <img src="assets/images/ridge.webp" alt="Logo 1" class="logo-image">
+                    <img src="assets/images/equal_housing.webp" alt="Logo 2" class="logo-image">
+                    <img src="assets/images/realtor.webp" alt="Logo 3" class=" logo-image">
+                    <img src="assets/images/pahrum.webp" alt="Logo 4" class=" logo-image">
+                </div>
+            </div>
+
+            <div class="gallery-title text-center my-4">
+                <h2>PHOTO GALLERY</h2>
+            </div>
+
+            <div class="gallery-wrapper mt-3 pt-3">
+                <div class="gallery-container">
+                    <div class="main-image-wrapper">
+                        <img id="mainGalleryImage" src="assets/images/home1.webp" alt="Gallery Main Image"
+                            class="main-gallery-image">
+                        <button class="gallery-nav-btn gallery-prev" id="galleryPrev" aria-label="Previous Image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-nav-btn gallery-next" id="galleryNext" aria-label="Next Image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="gallery-thumbnails">
+                        <div class="thumbnail-track" id="thumbnailTrack">
+                            <img src="assets/images/home1.webp" alt="Thumbnail 1" class="thumbnail-item active"
+                                data-index="0">
+                            <img src="assets/images/home2.webp" alt="Thumbnail 2" class="thumbnail-item" data-index="1">
+                            <img src="assets/images/home3.webp" alt="Thumbnail 3" class="thumbnail-item" data-index="2">
+                            <img src="assets/images/heroBg.png" alt="Thumbnail 4" class="thumbnail-item" data-index="3">
+                            <img src="assets/images/home4.webp" alt="Thumbnail 5" class="thumbnail-item" data-index="4">
+                            <img src="assets/images/marci.png" alt="Thumbnail 6" class="thumbnail-item" data-index="5">
+                            <img src="assets/images/logo.png" alt="Thumbnail 7" class="thumbnail-item" data-index="6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR SERVICES SECTION -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="services-title text-center mb-5">OUR SERVICES</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Real Estate Done Right</h3>
+                        <p>Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell
+                            your residence, looking at investment properties, or just curious about the markets, our
+                            team ensures you get the best experience possible!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Commercial & Residential</h3>
+                        <p>Large or small, condo or mansion, we can find it and get at the price that's right.
+                            Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community.
+                            Happy to help you find where to put your hard-earned dollars.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Rely on Expertise</h3>
+                        <p>If you have questions about affordability, credit, and loan options, trust us to connect you
+                            with the right people to get the answers you need in a timely fashion. We make sure you feel
+                            confident and educated every step of the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="contact-title text-center mb-5">GET IN TOUCH</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-form-wrapper">
+                        <h3 class="contact-form-title">Send us a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control contact-input" id="contactName" name="name"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control contact-input" id="contactEmail" name="email"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Message</label>
+                                <textarea class="form-control contact-input" id="contactMessage" name="message" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">SEND MESSAGE</button>
+                        </form>
+                        <div class="contact-divider my-4 text-center">
+                            <span>or</span>
+                        </div>
+                        <a href="https://wa.me/2069196886" class="btn btn-whatsapp w-100" target="_blank">
+                            <i class="fab fa-whatsapp"></i> MESSAGE US ON WHATSAPP
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-info-wrapper">
+                        <h3 class="contact-info-title">Contact Information</h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div>
+                                <h5>Office</h5>
+                                <p>Marci Metzger - THE RIDGE REALTY GROUP<br>
+                                    3190 HW-160, Suite F<br>
+                                    Pahrump, Nevada 89048<br>
+                                    United States</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p><a href="tel:2069196886">(206) 919-6886</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5>Office Hours</h5>
+                                <p><strong>Open daily</strong><br>
+                                    8:00 am - 7:00 pm<br><br>
+                                    <em>Appointments outside office hours available upon request. Just call!</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="map-title text-center mb-4">FIND US</h2>
+            <div class="map-wrapper">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5526840936707!2d-115.96456!3d36.20608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c0db0c0c0c0d%3A0x0!2sMarci%20Metzger%20-%20THE%20RIDGE%20REALTY%20GROUP!5e0!3m2!1sen!2sus!4v1234567890"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <div class="footer-col">
+                        <h5 class="footer-title">About Us</h5>
+                        <p>Marci Metzger and The Ridge Realty Group are committed to providing exceptional real estate
+                            services in Pahrump and the surrounding Nevada area.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-col">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#listings">Listings</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-col">
+                        <h5 class="footer-title">Contact</h5>
+                        <p><i class="fas fa-phone-alt"></i> (206) 919-6886<br>
+                            <i class="fas fa-map-marker-alt"></i> 3190 HW-160, Suite F<br>
+                            Pahrump, Nevada 89048
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom text-center">
+                <p>&copy; 2024 Marci Metzger - The Ridge Realty Group. All rights reserved.</p>
+                <p class="social-links">
+                    <a href="https://facebook.com" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/2069196886" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
