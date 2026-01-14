@@ -118,15 +118,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.getElementById('galleryNext');
     let currentIndex = 0;
 
-    const galleryImages = [
-        'assets/images/home1.webp',
-        'assets/images/home2.webp',
-        'assets/images/home3.webp',
-        'assets/images/heroBg.png',
-        'assets/images/home4.webp',
-        'assets/images/marci.png',
-        'assets/images/logo.png'
+  const galleryImages = [
+        'assets/images/1.webp',
+        'assets/images/2.webp',
+        'assets/images/3.webp',
+        'assets/images/4.webp',
+        'assets/images/5.webp',
+        'assets/images/6.webp',
+        'assets/images/7.webp'
     ];
+
 
     function updateGallery(index, skipScroll = false) {
         if (index < 0) index = galleryImages.length - 1;
@@ -179,3 +180,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize on page load (skip scroll to prevent page jump)
     updateGallery(0, true);
 })();
+
